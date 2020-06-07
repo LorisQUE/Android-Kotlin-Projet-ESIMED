@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OperationAddActivity"
+    tools:showIn="@layout/activity_operation_add">
+
+    <TextView
+        android:id="@+id/txtViewOperationAddDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add_date"
+        android:textSize="@dimen/operation_add_font_size"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnOperationAddDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add_selection_date"
+        android:layout_toEndOf="@+id/txtViewOperationAddDateSelectionner"
+        android:textSize="@dimen/operation_add_font_size"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/txtViewOperationAddDateSelectionner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add_date_selectionner"
+        android:layout_toEndOf="@id/txtViewOperationAddDate"
+        android:textSize="@dimen/operation_add_font_size"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtViewOperationAddSomme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add_somme"
+        android:textSize="@dimen/operation_add_font_size"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnOperationAddDate"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/operation_add_margin_top"/>
+
+    <EditText
+        android:id="@+id/editTextoperationAddSomme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txtViewOperationAddSomme"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnOperationAddDate"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/txtViewOperationAddMoyenPaiement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add_moyen_paiement"
+        android:textSize="@dimen/operation_add_font_size"
+        android:layout_below="@+id/txtViewOperationAddSomme"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/operation_add_margin_top"/>
+
+    <Spinner
+        android:id="@+id/spinnerOperationAddMoyenPaiement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/imgBtnOperationAddPaiement"
+        android:layout_toEndOf="@+id/txtViewOperationAddMoyenPaiement"
+        android:layout_below="@+id/txtViewOperationAddSomme"
+        android:layout_marginTop="@dimen/operation_add_margin_top"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnOperationAddPaiement"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/txtViewOperationAddMoyenPaiement"
+        android:baselineAlignBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/txtViewOperationAddTiers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add_tiers"
+        android:textSize="@dimen/operation_add_font_size"
+        android:layout_below="@+id/txtViewOperationAddMoyenPaiement"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/operation_add_margin_top"/>
+
+    <Spinner
+        android:id="@+id/spinnerOperationAddTiers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txtViewOperationAddTiers"
+        android:layout_toStartOf="@+id/imgBtnOperationAddTiers"
+        android:layout_below="@+id/spinnerOperationAddMoyenPaiement"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnOperationAddTiers"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/txtViewOperationAddTiers"
+        android:baselineAlignBottom="true"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOperationAddDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewOperationAddTiers"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/operation_add_margin_top">
+
+        <RadioButton
+            android:id="@+id/radBtnAddDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/operation_add_debit"
+            android:textSize="@dimen/operation_add_font_size"
+            android:layout_marginEnd="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radBtnAddCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/operation_add_credit"
+            android:textSize="@dimen/operation_add_font_size"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAjoutOperationAjout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_valider"
+        android:textSize="@dimen/operation_add_font_size"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@+id/btnAjoutOperationAnnuler"/>
+
+    <Button
+        android:id="@+id/btnAjoutOperationAnnuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_annuler"
+        android:textSize="@dimen/operation_add_font_size"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

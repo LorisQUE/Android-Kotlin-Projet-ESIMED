@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOperationCell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/colorCardOperation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtViewOperationCellDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_cell_date"
+                android:paddingTop="5dp"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtViewOperationCellTiers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_cell_tiers"
+                android:layout_marginStart="@dimen/operation_add_margin_top"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/txtViewOperationCellDate"
+                android:layout_alignBaseline="@+id/txtViewOperationCellDate"/>
+
+            <TextView
+                android:id="@+id/txtViewOperationCellRapprochement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_add_rapprochement"
+                android:layout_marginStart="@dimen/operation_add_margin_top"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/txtViewOperationCellTiers"
+                android:layout_alignBaseline="@+id/txtViewOperationCellDate"/>
+
+            <TextView
+                android:id="@+id/txtViewOperationCellModePaie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_cell_mode_paiement"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/txtViewOperationCellTiers"/>
+
+            <TextView
+                android:id="@+id/txtViewOperationCellDebit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_cell_credit_debit"
+                android:textSize="20sp"
+                android:layout_marginStart="@dimen/operation_add_margin_top"
+                android:layout_toEndOf="@+id/txtViewOperationCellModePaie"
+                android:layout_below="@+id/txtViewOperationCellTiers"/>
+
+
+            <TextView
+                android:id="@+id/txtViewOperationCellSomme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_cell_somme"
+                android:textSize="20sp"
+                android:layout_marginStart="@dimen/operation_add_margin_top"
+                android:layout_toEndOf="@+id/txtViewOperationCellDebit"
+                android:layout_below="@+id/txtViewOperationCellTiers"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

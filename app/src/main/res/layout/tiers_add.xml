@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtViewTiersAddTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tiers_add_titre"
+        android:textSize="20sp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtViewTiersAddTiers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add_tiers"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtViewTiersAddTitre"/>
+
+    <EditText
+        android:id="@+id/editTextTiersAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewTiersAddTitre"
+        android:layout_toEndOf="@+id/txtViewTiersAddTiers"/>
+
+<Button
+    android:id="@+id/btnTiersAddValider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/button_valider"
+    android:layout_marginEnd="10dp"
+    android:layout_below="@+id/editTextTiersAdd"
+    android:layout_toStartOf="@+id/btnTiersAddAnnuler"/>
+
+<Button
+    android:id="@+id/btnTiersAddAnnuler"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/button_annuler"
+    android:layout_below="@+id/editTextTiersAdd"
+    android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Ma Banque</string>
+    <string name="action_settings">Settings</string>
+    <string name="compte_libelle">Mon Compte</string>
+    <string name="operation_libelle">Nom Operation</string>
+    <string name="tiers_nom">Nom Tiers</string>
+
+    <string name="ajout_operation">Ajouter une\nopération</string>
+
+    <string name="button_valider">Valider</string>
+    <string name="button_annuler">Annuler</string>
+
+    <string name="compte_solde_titre">Solde</string>
+    <string name="compte_solde_modif">%s</string>
+    <string name="compte_debit_titre">Débit</string>
+    <string name="compte_debit_modif">%s</string>
+    <string name="compte_credit_titre">Crédit</string>
+    <string name="compte_credit_modif">%s</string>
+    <string name="mois_en_Cours">Mois en cours</string>
+
+    <string name="title_activity_operation">operation</string>
+    <string name="operation_solde_titre">Solde:</string>
+    <string name="operation_cell_date">24/01/2020</string>
+    <string name="operation_cell_tiers">NOYER Jean</string>
+    <string name="operation_cell_somme">36€</string>
+    <string name="operation_cell_mode_paiement">Virement</string>
+    <string name="operation_cell_credit_debit">Débit</string>
+
+    <string name="title_activity_operation_add">Ajouter une opération</string>
+    <string name="operation_add_selection_date">Choisir une date</string>
+    <string name="operation_add_date_selectionner">__/__/____</string>
+    <string name="operation_add_somme">Montant:</string>
+    <string name="operation_add_tiers">Tiers:</string>
+    <string name="operation_add_moyen_paiement">Paiement:</string>
+    <string name="operation_add_date">Date:</string>
+    <string name="operation_add_debit">Débit</string>
+    <string name="operation_add_credit">Crédit</string>
+    <string name="operation_add_rapprochement">Rapprochement:</string>
+
+    <string name="tiers_add_titre">Ajouter un Tiers</string>
+
+    <string name="paiement_add_titre">Ajouter un moyen de Paiement</string>
+    <string name="title_activity_operation_edit">Modifier une opération</string>
+    <string name="title_activity_operation_rapprochement">Opérations à Rapprochés</string>
+    <string name="operation_rapp_rapprochement">Rapprochement: </string>
+
+</resources>

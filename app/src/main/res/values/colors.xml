@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F3791</color>
+    <color name="colorPrimaryDark">#000E57</color>
+    <color name="colorAccent">#D8CF1B</color>
+    <color name="colorCardMenu">#E7E7E7</color>
+    <color name="colorCardOperation">#E6E6E6</color>
+    <color name="androidStudiocolorPrimary">#008577</color>
+    <color name="androidStudiocolorPrimaryDark">#00574B</color>
+    <color name="androidStudiocolorAccent">#D81B60</color>
+
+    <color name="white">#ffff</color>
+</resources>
